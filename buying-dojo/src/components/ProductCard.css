@@ -1,0 +1,111 @@
+/* src/components/ProductCard.css */
+
+.product-card {
+  width: 300px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 16px;
+  margin:20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* IMAGE – NO CROPPING */
+.product-image-wrapper {
+  width: 100%;
+  height: 180px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* IMPORTANT */
+}
+
+/* TEXT */
+.product-name {
+  font-size: 1.1rem;
+  margin: 12px 0 4px;
+}
+
+.product-price {
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.product-rating {
+  align-self: flex-start;
+  background: #00bfa5;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* LIST */
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* keeps cards equal height */
+}
+
+.product-list li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.pro {
+  color: #1a7f37;
+}
+
+.con {
+  color: #c62828;
+}
+
+/* READ MORE */
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #00bfa5;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 0;
+  text-align: left;
+}
+
+/* ACTION BUTTONS */
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.amazon {
+  background: #ff9900;
+  color: #fff;
+}
+
+.flipkart {
+  background: #2874f0;
+  color: #fff;
+}
